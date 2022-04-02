@@ -1,15 +1,19 @@
 {
-  "name": "user-list",
+  "name": "tech-blog-lovers",
   "version": "1.0.0",
-  "description": "",
+  "description": "blog for tech lovers",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/seed.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:invogue01/techLovers-blog.git"
+},
   "keywords": [],
-  "author": "",
+  "author": "Andrea Mac",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
