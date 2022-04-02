@@ -11,5 +11,6 @@ router.use("/api", apiRoutes);
 router.use("/users", userRoutes);
 router.use("/posts", postRoutes);
 router.use("/comments", commentRoutes);
+router.use("/dashboard", dashboardRoutes);
 
 module.exports = router;
