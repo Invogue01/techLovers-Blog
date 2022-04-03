@@ -4,39 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Log-in</title>
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/solar/bootstrap.min.css"
-  />
+  <title>User Registry</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/solar/bootstrap.min.css">
 </head>
 
 <body>
   <header class="display-flex justify-space-between align-center p-2">
     <h1>
-      Welcome! Please Log-in or Sign-up
+      User Registry
     </h1>
-    <header class="hero">
-          <div>
-            <nav class"nav">
-                    <a class="link" href="/">Home</a>
-                    <a class="link" href="/dashboard">Dashboard</a>
-                    {{#if loggedIn}}
-                    <a class="link" href="/" id="logout">Logout</a>
-                    {{else}}
-                   
-                    {{/if}}
-                </nav>          
-          </div>
-
-          <h1 class="app-title"><i class="fab "></i>The Tech Blog</h1>
-      </header>
-    {{!-- {{#if logged_in}}
+    {{#if logged_in}}
     <nav>
-      <button class="btn" id="logout">Logout</button>
+      <button class="btn" id="logout">logout</button>
     </nav>
     {{/if}}
-  </header> --}}
+  </header>
   <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
@@ -45,8 +27,10 @@
   </footer>
 
   {{#if logged_in}}
-  <script src="/public/js/logout.js"></script>
+  <script src="/js/logout.js"></script>
   {{/if}}
 </body>
 
 </html>
+
+ 

@@ -6,12 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "seed": "node seeds/seed.js"
+    "seed": "node seeds/index.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:invogue01/techLovers-blog.git"
-},
+  },
   "keywords": [],
   "author": "Andrea Mac",
   "license": "ISC",
@@ -25,5 +26,8 @@
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
